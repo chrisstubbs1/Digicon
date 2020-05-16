@@ -1,0 +1,51 @@
+READ ME!!!!!!
+
+This is the documentation for the Digicon API.
+
+Introduction
+========================================================================================================================
+This API models a user of the application through JSON payloads. An embedded server is contained within
+the application at the moment so whenever it is started, it is launched on localhost:8080. This can be configured in
+the applications.properties file within the resources folder in the class path. The URL to hit the actual API
+itself is localhost:8080/api/digicon-user.
+
+How to use the api
+========================================================================================================================
+Open the project folder as a project
+Run the DigiconApiApplication class which will start a server on http://localhost:8080
+Send and recieve JSON data modeled below with GET, POST, DELETE, PUT requests
+Data is stored in an embedded database which can be accessed at http://localhost:8080/h2-console using default credentials
+
+The current model for the JSON Payload
+========================================================================================================================
+WHEN SENDING A JSON TO BE ADDED TO THE SERVER DO NOT ATTACH THE "id" and "accountCreationDate" FIELDS. THEY ARE AUTOMATICALLY GENERATED
+WHEN THE JSON IS ACCEPTED BY THE SERVER. THIS IS JUST AN EXAMPLE OF WHAT AN EXISTING USER WILL LOOK LIKE.
+
+{
+        "firstName": "Joe",
+        "lastName": "Johnson",
+        "userName": "joejohnson1",
+        "emailAddress": "joe@email.com",
+        "birthday": "07/02/1997",
+        "gender": "male",
+        "password": "password",
+        "id": "27bda4fb-6fc3-48ca-ab75-bda2e316e6da",
+        "accountCreationDate": "2020-05-13"
+}
+
+What is currently supported by this API you may ask?
+========================================================================================================================
+At the moment the api can be the target of the following methods are valid HTTP requests:
+
+GET (get all users in database)
+GET (get user by id passed to url)
+POST (add a user to the database using JSON, remember do not post the "id" and "accountCreationDate".
+    The application will handle it.)
+PUT (updates a current user by passing the user to be updated id in the url, with a valid JSON payload in the request body)
+
+New Features since last patch
+========================================================================================================================
+May 14 2020
+* A user can now be added to the database through the sign up page
+* In memory database is implemented, can be accessed from http://localhost:8080/h2-console while server is running
+  with default credentials

@@ -1,0 +1,3 @@
+Check if a username is already taken when signing up
+Check if an email is already taken when signing up
+login scripts
