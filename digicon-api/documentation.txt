@@ -13,13 +13,14 @@ How to use the api
 ========================================================================================================================
 Open the project folder as a project
 Run the DigiconApiApplication class which will start a server on http://localhost:8080
-Send and recieve JSON data modeled below with GET, POST, DELETE, PUT requests
+Send and receive JSON data modeled below with GET, POST, DELETE, PUT requests
 Data is stored in an embedded database which can be accessed at http://localhost:8080/h2-console using default credentials
 
 The current model for the JSON Payload
 ========================================================================================================================
-WHEN SENDING A JSON TO BE ADDED TO THE SERVER DO NOT ATTACH THE "id" and "accountCreationDate" FIELDS. THEY ARE AUTOMATICALLY GENERATED
-WHEN THE JSON IS ACCEPTED BY THE SERVER. THIS IS JUST AN EXAMPLE OF WHAT AN EXISTING USER WILL LOOK LIKE.
+WHEN SENDING A JSON TO BE ADDED TO THE SERVER DO NOT ATTACH THE "id" and "accountCreationDate" FIELDS. THEY ARE
+AUTOMATICALLY GENERATED WHEN THE JSON IS ACCEPTED BY THE SERVER. THIS IS JUST AN EXAMPLE OF WHAT AN EXISTING USER
+WILL LOOK LIKE.
 
 {
         "firstName": "Joe",
@@ -45,6 +46,9 @@ PUT (updates a current user by passing the user to be updated id in the url, wit
 
 New Features since last patch
 ========================================================================================================================
+May 30 2020
+*Added new frontend using React instead of vanilla JS
+
 May 14 2020
 * A user can now be added to the database through the sign up page
 * In memory database is implemented, can be accessed from http://localhost:8080/h2-console while server is running

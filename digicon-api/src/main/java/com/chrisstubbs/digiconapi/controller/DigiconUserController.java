@@ -10,6 +10,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/digicon-user")
+@CrossOrigin("*")
 public class DigiconUserController {
 
     private DigiconUserService digiconUserService;
@@ -32,7 +33,7 @@ public class DigiconUserController {
     }
 
     //Add or Post Digicon User to database//////////////////////////////////////////////////////////////////////////////
-    @CrossOrigin
+//    @CrossOrigin
     @PostMapping
     public @ResponseBody DigiconUser addDigiconUser(@RequestBody DigiconUser digiconUserToAdd){
         return digiconUserService.addNewDigiconUser(digiconUserToAdd);
