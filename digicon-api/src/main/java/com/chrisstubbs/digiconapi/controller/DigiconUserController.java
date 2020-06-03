@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
+
 @RequestMapping("/api/digicon-user")
-@CrossOrigin("*")
 public class DigiconUserController {
 
     private DigiconUserService digiconUserService;
@@ -22,18 +22,20 @@ public class DigiconUserController {
 
     //Get All Digicon Users from database/////////////////////////////////////////////////////////////////////
     @GetMapping
+    @CrossOrigin(origins = "http://localhost:3000")
     public List<DigiconUser> getAllDigiconUsers() {
         return digiconUserService.getAllDigiconUsers();
     }
 
     //Get a single Digicon User from hardcoded database/////////////////////////////////////////////////////////////////
     @GetMapping(path = "{id}")
+    @CrossOrigin
     public DigiconUser getDigiconUserById(@PathVariable UUID id) {
         return digiconUserService.getDigiconUserById(id);
     }
 
     //Add or Post Digicon User to database//////////////////////////////////////////////////////////////////////////////
-//    @CrossOrigin
+    @CrossOrigin
     @PostMapping
     public @ResponseBody DigiconUser addDigiconUser(@RequestBody DigiconUser digiconUserToAdd){
         return digiconUserService.addNewDigiconUser(digiconUserToAdd);

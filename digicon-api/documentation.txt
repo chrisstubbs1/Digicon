@@ -46,6 +46,9 @@ PUT (updates a current user by passing the user to be updated id in the url, wit
 
 New Features since last patch
 ========================================================================================================================
+June 01 2020
+*React-ified the entire project thus far
+``
 May 30 2020
 *Added new frontend using React instead of vanilla JS
 

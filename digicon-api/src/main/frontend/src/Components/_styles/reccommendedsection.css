@@ -1,0 +1,8 @@
+.recommendedsection-container{
+    width: 100%;
+    height: 33%;
+    padding: 10px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+}

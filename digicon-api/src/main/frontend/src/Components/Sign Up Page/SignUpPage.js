@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/loginpage.css"
+import "../_styles/loginpage.css"
 import SideBlocks from "../Login Page/SidesBlocks";
 import ImageArea from "../Login Page/ImageArea";
 import SignUpArea from "./SignUpArea";

@@ -1,12 +1,16 @@
 import React from "react";
-import UserHomePage from "./User Home Page/UserHomePage"
-import "./styles/userhomepage.css"
+// import LandingPage from "./Landing Page/LandingPage";
+// import LoginPage from "./Login Page/LoginPage"
+import SignUpPage from "./Sign Up Page/SignUpPage"
+
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <UserHomePage />
+        {/* <LandingPage /> */}
+        {/* <LoginPage/> */}
+        <SignUpPage/>
       </div>
     );
   }

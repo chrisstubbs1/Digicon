@@ -1,0 +1,131 @@
+.login-container{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.form-container{
+    width: 70%;
+    height: 60%;
+    background-color: #D53A33;  
+    align-self: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+#firstname-field,
+#lastname-field,
+#username-field, 
+#email-field,
+#password-field,
+#birthday-field,
+#gender-field {
+    background-color: #1d9099;
+    color: whitesmoke;
+    margin-left: 1em;
+}
+
+.signup-button{
+    color: whitesmoke;
+    font-size: 1.1em;
+    background: transparent;
+    border: .1em solid #E79C10;
+}
+
+.signup-button:hover{
+    background-color: #E79C10;
+}
+
+label{
+    color: whitesmoke;
+}
+
+.neon{
+    font-size: 6em;
+    opacity: 75%;
+    margin: 0% 0% 1% 0%;
+    color: #1d9099;
+    text-shadow: 1vmin 1vmin 0 #E79C10, -1vmin -1vmin 0 #D53A33;
+    padding: .5em 0% .5em .5em;
+}
+
+.signup-text{
+    color: whitesmoke;
+    opacity: 70%;
+}
+
+.button-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    color: whitesmoke;
+}
+
+/* .login-container{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-text{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2.5em;
+}
+
+.form-container{
+    width: 80%;
+    height: 70%;
+    background-color: #3da4ab;
+    align-self: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+#firstname-field,
+#lastname-field,
+#username-field,
+#email-field,
+#password-field,
+#birthday-field,
+#gender-field{
+   
+    background-color: #1d9099;
+    color: whitesmoke;
+    margin-left: 1e
+}
+
+form > button {
+    background-color: #0e9aa7;
+    color: whitesmoke;
+}
+
+label{
+    color: whitesmoke;
+}
+
+.neon{
+    font-size: 6em;
+    opacity: 75%;
+    margin: 0% 0% 1% 0%;
+    color: #1d9099;
+    text-shadow: 1vmin 1vmin 0 #E79C10, -1vmin -1vmin 0 #D53A33;
+    padding: .5em 0% .5em .5em;
+} */

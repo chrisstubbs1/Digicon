@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/sideblocks.css";
+import "../_styles/sideblocks.css";
 
 class SideBlocks extends React.Component {
 

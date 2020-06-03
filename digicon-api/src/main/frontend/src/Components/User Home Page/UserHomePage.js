@@ -1,6 +1,8 @@
 import React from "react"
-import "../styles/userhomepage.css"
+import "../_styles/userhomepage.css"
 import Sidebar from "./Sidebar"
+import ReccommendedSection from "./ReccommendedSection"
+import MainSection from "./MainSection"
 
 class UserHomePage extends React.Component {
 
@@ -8,6 +10,7 @@ class UserHomePage extends React.Component {
         return(
             <div className="userhome-container">
                 <Sidebar/>
+                <MainSection/>
             </div>
         )
     }

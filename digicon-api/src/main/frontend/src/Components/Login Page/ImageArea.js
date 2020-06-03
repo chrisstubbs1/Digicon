@@ -1,11 +1,12 @@
 import React from "react"
-import "../styles/imagearea.css";
+import "../_styles/imagearea.css";
 
 class ImageArea extends React.Component {
     render() {
         return (
           <div className="image-container">
-            <img src={require("../images/concert.jpg")} alt="concert" />
+            <img src={require("../_images/band-members-playing-on-stage-1749822.jpg")} alt="concert"/>
+           
           </div>
         );
     }
